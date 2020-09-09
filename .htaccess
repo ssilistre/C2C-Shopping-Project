@@ -1,0 +1,15 @@
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}.php -f 
+RewriteCond $1 !^(inc|steamauth|themes|)
+RewriteRule ^(.*)$ $1.php 
+RewriteRule ^([a-z]+)\/?$ $1.php [NC]
+RewriteRule ^([0-9a-zA-Z-_]+)/([0-9]+)$  detay.php?sef=$1&urunid=$2 [L,QSA]
+RewriteRule ^([0-9a-zA-Z-_]+)/([0-9]+)$  listele.php?kategori_id=$1 [L,QSA]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# “ea-php73” paketini varsayılan “PHP” programlama dili olarak ayarlayın.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
