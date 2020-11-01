@@ -43,9 +43,9 @@ if(isset($_POST['BakiyeYukle']) )
 		';
 
 
-		$merchant_id 	= '176019';
-		$merchant_key 	= 'jpFnF3LPR6384B4R';
-		$merchant_salt	= 'TKhLor2323Q9SCc8';
+		$merchant_id 	= '*****';
+		$merchant_key 	= '*****';
+		$merchant_salt	= '******';
 	#
 	## Müşterinizin sitenizde kayıtlı veya form vasıtasıyla aldığınız eposta adresi
 		$email = guvenlik($_POST['email']);
