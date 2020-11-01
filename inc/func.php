@@ -78,7 +78,7 @@ function sessionKontrol(){
 
 		$postUrl="http://sms.bizimsms.mobi:8080/api/smspost/v1"; 
 
-		$postData="". "<sms>". "<username>*****</username>". "<password>******</password>". "<header>S.SILISTRE</header>". "<validity>***</validity>". "<message>". "<gsm>". "<no>".$ceptel."</no>". "</gsm>". "<msg>".$mesaj."</msg>". "</message>". "</sms>"; 
+		$postData="". "<sms>". "<username>*****</username>". "<password>******</password>". "<header>******</header>". "<validity>***</validity>". "<message>". "<gsm>". "<no>".$ceptel."</no>". "</gsm>". "<msg>".$mesaj."</msg>". "</message>". "</sms>"; 
 
 		$ch=curl_init(); curl_setopt($ch,CURLOPT_URL,$postUrl); curl_setopt($ch,CURLOPT_POSTFIELDS,$postData); curl_setopt($ch,CURLOPT_POST,1); curl_setopt($ch,CURLOPT_TIMEOUT,5); curl_setopt($ch,CURLOPT_RETURNTRANSFER,1); curl_setopt($ch,CURLOPT_HTTPHEADER,Array("Content-Type: text/xml; charset=UTF-8")); 
 
